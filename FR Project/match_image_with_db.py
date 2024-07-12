@@ -255,32 +255,3 @@ def process_frame(camera = cv2.VideoCapture(0)):
         print("No labels detected.")
         return None
 
-
-# def show_final_message(message, camera = cv2.VideoCapture(0)):
-#     success, frame = camera.read()
-#     if success:
-#         cv2.putText(frame, message, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)
-#         cv2.imshow('Video', frame)
-#         cv2.waitKey(1000)  # Display the final message for 3 seconds
-#         camera.release()
-#         cv2.destroyAllWindows()
-
-
-# if __name__ == "__main__":
-#     emp_id = input("Enter Employee ID: ")
-#     reset_known_faces()
-#     update_known_faces(emp_id)
-#
-#     camera = cv2.VideoCapture(0)
-#     output_labels = []  # Array to store the output labels
-#
-#     movement_buffer = {
-#         "blinks": [],
-#         "head_movements": [],
-#         "lip_movements": []
-#     }
-#
-#     frame_thread = threading.Thread(target=process_frame)
-#     frame_thread.start()
-#     frame_thread.join()
-
